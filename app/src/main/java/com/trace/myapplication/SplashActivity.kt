@@ -18,7 +18,7 @@ class SplashActivity : Activity() {
 
         val splashGif: ImageView = findViewById(id.gif_image) as ImageView
         //val gifImage = GlideDrawableImageViewTarget(splashGif)
-        Glide.with(this).load(raw.trace_splash2).into(splashGif)
+        Glide.with(this).load(raw.trace_splash4).into(splashGif)
 
         Handler().postDelayed({ //delay를 위한 handler
 
