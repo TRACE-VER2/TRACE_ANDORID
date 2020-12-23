@@ -5,10 +5,10 @@
     android:background="@color/colorPrimary">
 
     <ImageView
-        android:id="@+id/gif_image"
+        android:id="@+id/png_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/start_logo"
         android:layout_margin="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
