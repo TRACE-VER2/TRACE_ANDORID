@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Trace</string>
+
+<!--    review detail-->
+    <string name="room_available">방있어요</string>
+
+    <string name="building_info">건물정보</string>
+    <string name="address">주소</string>
+    <string name="build_date">준공년도</string>
+    <string name="score_avg">별점 평균</string>
+
+    <string name="view_all_reviews">전체 리뷰 보기</string>
+
+    <string name="price">가격</string>
+    <string name="room_area">면적</string>
+    <string name="residential_period">거주기간</string>
+    <string name="insect">벌레 여부</string>
+    <string name="soundproof">방음</string>
+    <string name="water_pressure_freeze">수압 및 동파여부</string>
+    <string name="sunlight">채광</string>
+    <string name="remodeling">리모델링 여부</string>
+
+
 </resources>
