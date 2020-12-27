@@ -34,7 +34,20 @@ class IdSettingFragment : Fragment() {
         binding.signupBtnCheck.setOnClickListener {
             Toast.makeText(activity,"사용할 수 있는 아이디 입니다.", Toast.LENGTH_SHORT).show()
         }
-      
+        binding.signupBtnAgree.setOnClickListener{
+            agree = if(agree){
+
+                binding.signupBtnAgree.setImageResource(R.drawable.btn_agree_unpick)
+                false
+            } else{
+                Toast.makeText(activity,"동의", Toast.LENGTH_SHORT).show()
+                binding.signupBtnAgree.setImageResource(R.drawable.btn_agree_pick)
+                true
+            }
+        }
+        binding.idsettingBtnPrev.setOnClickListener {
+            view.findNavController().popBackStack()
+        }
 
         return view
     }
