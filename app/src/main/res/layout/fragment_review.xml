@@ -10,29 +10,30 @@
         android:layout_height="match_parent">
 
         <FrameLayout
-            android:id="@+id/fl_card_building_info_detail"
+            android:id="@+id/frame_building_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
             <include
-                layout="@layout/card_building_info_detail"/>
+                android:id="@+id/included_card_building_info_detail"
+                layout="@layout/fragment_building_info"/>
         </FrameLayout>
         <TextView
             android:id="@+id/tv_view_all_reviews"
-            app:layout_constraintTop_toBottomOf="@id/fl_card_building_info_detail"
+            app:layout_constraintTop_toBottomOf="@id/frame_building_info"
             android:layout_marginTop="@dimen/card_interval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/view_all_reviews"/>
         <FrameLayout
-            android:id="@+id/fl_card_user_review_detail"
+            android:id="@+id/frame_under_building_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv_view_all_reviews">
             <include
                 android:id="@+id/included_card_user_review_detail"
-                layout="@layout/card_user_review_detail"/>
+                layout="@layout/fragment_review_detail"/>
         </FrameLayout>
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_room_available"
