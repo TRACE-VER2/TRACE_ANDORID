@@ -1,10 +1,9 @@
-package com.trace.myapplication
+package com.trace.myapplication.startpage
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.ImageView
-import com.bumptech.glide.Glide
+import com.trace.myapplication.MainActivity
 import com.trace.myapplication.R.*
 
 
