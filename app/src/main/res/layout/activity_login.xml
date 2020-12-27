@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_grad_3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/trace_new_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_et_id"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:fontFamily="@font/netmarblem"
+        android:hint="아이디"
+        android:textSize="17dp"
+        android:textColor="@color/colorDarkGray"
+        android:lineSpacingExtra="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/login_et_pw"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/netmarblem"
+        android:hint="비밀번호"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_et_id"
+        app:layout_constraintStart_toStartOf="@+id/login_et_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_id" />
+
+    <ImageView
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_button"
+        app:layout_constraintEnd_toEndOf="@+id/login_et_pw"
+        app:layout_constraintStart_toStartOf="@+id/login_et_pw"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_pw" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/netmarblem"
+        android:lineSpacingExtra="10dp"
+        android:text="로 그 인"
+        android:textColor="#494747"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toTopOf="@+id/btn_login" />
+
+    <ImageView
+        android:id="@+id/btn_to_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sign_up_text"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
