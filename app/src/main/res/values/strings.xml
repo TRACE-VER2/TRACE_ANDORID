@@ -13,7 +13,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
-    <!--    review detail-->
+<!--    review detail-->
     <string name="room_available">방있어요</string>
 
     <string name="building_info">건물정보</string>
@@ -34,7 +34,7 @@
 
     <string name="written_review">솔직한 한 마디</string>
 
-    <!--    edit review-->
+<!--    edit review-->
     <string name="write_review">리뷰 작성하기</string>
     <string name="cost">거주 비용</string>
     <string name="total_score">총점</string>
