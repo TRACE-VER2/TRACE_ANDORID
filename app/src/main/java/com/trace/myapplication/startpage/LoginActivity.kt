@@ -3,9 +3,9 @@ package com.trace.myapplication.startpage
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.trace.myapplication.MainActivity
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.ActivityLoginBinding
+import com.trace.myapplication.main.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

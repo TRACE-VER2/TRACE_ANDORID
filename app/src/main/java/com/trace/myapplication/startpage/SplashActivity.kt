@@ -3,9 +3,10 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import com.trace.myapplication.MainActivity
+
 import com.trace.myapplication.R.*
 import com.trace.myapplication.main.MainActivity
+import com.trace.myapplication.startpage.LoginActivity
 
 
 class SplashActivity : Activity() {
@@ -22,7 +23,7 @@ class SplashActivity : Activity() {
 
         Handler().postDelayed({ //delay를 위한 handler
 
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
 
             finish()
         }, SPLASH_VIEW_TIME)

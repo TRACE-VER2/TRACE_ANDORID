@@ -7,27 +7,36 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
+import com.trace.myapplication.databinding.FragmentChoosePreferBinding
+import com.trace.myapplication.databinding.FragmentKingoFirstBinding
 import kotlinx.android.synthetic.main.fragment_kingo_first.*
 
 
 class KingoFirstFragment : Fragment() {
+    private lateinit var binding: FragmentKingoFirstBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        binding = FragmentKingoFirstBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+        binding.kingofirstBtnPrev.setOnClickListener {
+            view.findNavController().popBackStack()
+        }
+        binding.kingofirstBtnNext.setOnClickListener {
+            view.findNavController().navigate(R.id.action_kingoFirstFragment_to_kingoSecondFragment)
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kingo_first, container, false)
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        kingofirst_btn_prev.setOnClickListener {
-            view.findNavController().popBackStack()
-        }
-        kingofirst_btn_next.setOnClickListener {
-            view.findNavController().navigate(R.id.action_kingoFirstFragment_to_kingoSecondFragment)
-        }
+
     }
 }
