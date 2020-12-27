@@ -16,7 +16,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
             <include
-                android:id="@+id/included_card_building_info_detail"
+                android:id="@+id/included_building_info"
                 layout="@layout/fragment_building_info"/>
         </FrameLayout>
         <TextView
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv_view_all_reviews">
             <include
-                android:id="@+id/included_card_user_review_detail"
+                android:id="@+id/included_user_review"
                 layout="@layout/fragment_user_review"/>
         </FrameLayout>
         <androidx.cardview.widget.CardView

@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".main.MainActivity" />
         <activity android:name=".SplashActivity" />
+        <activity android:name=".main.test.TestActivity"/>
     </application>
 
 </manifest>
