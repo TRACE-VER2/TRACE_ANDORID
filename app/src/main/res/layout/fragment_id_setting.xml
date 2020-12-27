@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/signup_btn_agree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -108,9 +108,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:src="@drawable/btn_signup_last"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintEnd_toEndOf="@+id/signup_btn_agree"
+        app:layout_constraintStart_toStartOf="@+id/signup_btn_agree"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn_agree" />
 
     <TextView
         android:id="@+id/textView"
@@ -125,6 +125,21 @@
         app:layout_constraintEnd_toEndOf="@+id/signup_btn_last"
         app:layout_constraintStart_toStartOf="@+id/signup_btn_last"
         app:layout_constraintTop_toTopOf="@+id/signup_btn_last" />
+
+    <TextView
+        android:id="@+id/idsetting_btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="@font/netmarblem"
+        android:lineSpacingExtra="5sp"
+        android:text="&lt; 이전"
+        android:textColor="#4a4949"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 

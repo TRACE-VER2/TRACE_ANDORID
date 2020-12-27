@@ -15,19 +15,19 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-
         val navHostSignupFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_signup) as NavHostFragment
-        val navSignupController = navHostSignupFragment.navController
-        appBarSignupConfiguration = AppBarConfiguration(navSignupController.graph)
-        setupActionBarWithNavController(navSignupController, appBarSignupConfiguration)
+        //val navSignupController = navHostSignupFragment.navController
+        //appBarSignupConfiguration = AppBarConfiguration(navSignupController.graph)
+        //setupActionBarWithNavController(navSignupController, appBarSignupConfiguration)
+        //setupActionBarWithNavController(navSignupController)
     }
-
+/* Appbar setting
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_signup)
         return navController.navigateUp(appBarSignupConfiguration)
-        return navController.navigateUp(appBarSignupConfiguration)
-        return navController.navigateUp(appBarSignupConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+ */
 }
