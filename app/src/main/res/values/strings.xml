@@ -20,5 +20,17 @@
     <string name="sunlight">채광</string>
     <string name="remodeling">리모델링 여부</string>
 
+    <string name="written_review">솔직한 한 마디</string>
 
+<!--    edit review-->
+    <string name="write_review">리뷰 작성하기</string>
+    <string name="cost">거주 비용</string>
+    <string name="total_score">총점</string>
+    <string name="flag_for_sale"><i>방 내놓기</i></string>
+    <string name="fee_monthly">월세</string>
+    <string name="fee_yearly">전세</string>
+    <string name="deposit">보증금</string>
+    <string name="unit">(단위: 만)</string>
+    <string name="water_pressure">수압</string>
+    <string name="water_freeze">동파여부</string>
 </resources>
