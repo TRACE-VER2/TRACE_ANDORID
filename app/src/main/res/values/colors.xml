@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPick">#C8C8C8</color>
+    <color name="colorBackground">#dadbde</color>
+    <color name="colorRoomAvailable">#95caf9</color>
     <color name="colorPrimary">#96CCFB</color>
     <color name="colorDarkGray">#707070</color>
     <color name="colorBack">#E4E4E4</color>

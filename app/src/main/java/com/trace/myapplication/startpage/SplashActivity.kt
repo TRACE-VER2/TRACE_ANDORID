@@ -1,10 +1,11 @@
-package com.trace.myapplication.startpage
+package com.trace.myapplication
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import com.trace.myapplication.MainActivity
 import com.trace.myapplication.R.*
+import com.trace.myapplication.main.MainActivity
 
 
 class SplashActivity : Activity() {

@@ -48,7 +48,8 @@ out/
 # Gradle files
 .gradle
 .gradle/
-build/
+/build/*
+build.gradle
 
 # Signing files
 .signing/
@@ -95,6 +96,7 @@ obj/
 /out/
 
 # User-specific configurations
+.idea/
 .idea/caches/
 .idea/libraries/
 .idea/shelf/

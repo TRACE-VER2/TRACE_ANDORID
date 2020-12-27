@@ -62,6 +62,7 @@ proguard/
 # Log Files
 
 # Android Studio
+/build/*
 /*/build/
 /*/local.properties
 /*/out
@@ -95,6 +96,7 @@ obj/
 /out/
 
 # User-specific configurations
+.idea
 .idea/caches/
 .idea/libraries/
 .idea/shelf/

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Trace</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_signup">SignupActivity</string>
@@ -11,4 +12,37 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+<!--    review detail-->
+    <string name="room_available">방있어요</string>
+
+    <string name="building_info">건물정보</string>
+    <string name="address">주소</string>
+    <string name="build_date">준공년도</string>
+    <string name="score_avg">별점 평균</string>
+
+    <string name="view_all_reviews">전체 리뷰 보기</string>
+
+    <string name="price">가격</string>
+    <string name="room_area">면적</string>
+    <string name="residential_period">거주기간</string>
+    <string name="insect">벌레 여부</string>
+    <string name="soundproof">방음</string>
+    <string name="water_pressure_freeze">수압 및 동파여부</string>
+    <string name="sunlight">채광</string>
+    <string name="remodeling">리모델링 여부</string>
+
+    <string name="written_review">솔직한 한 마디</string>
+
+<!--    edit review-->
+    <string name="write_review">리뷰 작성하기</string>
+    <string name="cost">거주 비용</string>
+    <string name="total_score">총점</string>
+    <string name="flag_for_sale"><i>방 내놓기</i></string>
+    <string name="fee_monthly">월세</string>
+    <string name="fee_yearly">전세</string>
+    <string name="deposit">보증금</string>
+    <string name="unit">(단위: 만)</string>
+    <string name="water_pressure">수압</string>
+    <string name="water_freeze">동파여부</string>
 </resources>
