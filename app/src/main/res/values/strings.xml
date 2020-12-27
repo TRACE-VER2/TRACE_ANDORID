@@ -32,9 +32,9 @@
     <string name="sunlight">채광</string>
     <string name="remodeling">리모델링 여부</string>
 
-    <string name="written_review">솔직한 한 마디</string>
+    <string name="comment">솔직한 한 마디</string>
 
-<!--    edit review-->
+<!--    edit review 1-->
     <string name="write_review">리뷰 작성하기</string>
     <string name="cost">거주 비용</string>
     <string name="total_score">총점</string>
@@ -44,5 +44,23 @@
     <string name="deposit">보증금</string>
     <string name="unit">(단위: 만)</string>
     <string name="water_pressure">수압</string>
+    <string name="good">좋음</string>
+    <string name="bad">안 좋음</string>
     <string name="water_freeze">동파여부</string>
+    <string name="freeze_yes">동파 있음</string>
+    <string name="freeze_no">동파 없음</string>
+    <string name="many">많음</string>
+    <string name="few">적음</string>
+    <string name="next"><u>다음으로 → </u></string>
+
+<!--    edit review 2-->
+    <string name="options">옵션</string>
+    <string name="options_hint">냉장고, 책상 등 방에 포함된 옵션을 작성해 주세요</string>
+    <string name="surroundings">주변 정보</string>
+    <string name="surroundings_hint">교통, 편의시설, 외부소음, 식당, 학교와의 거리 등을 입력해주세요</string>
+    <string name="comment_hint">그 외 솔직한 후기를 작성해주세요</string>
+    <string name="put_room_for_sale"><u>방 내놓기</u></string>
+    <string name="previous"><u> ← 이전으로</u></string>
+    <string name="done_and_save">완료 및 저장</string>
+    <string name="contact_hint">연락 수단을 입력해주세요<br/>(휴대전화 번호, 카카오톡 id 등)</string>
 </resources>
