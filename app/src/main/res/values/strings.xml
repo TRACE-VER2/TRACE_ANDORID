@@ -34,6 +34,8 @@
 
     <string name="comment">솔직한 한 마디</string>
 
+    <string name="pay_and_read_more"><u>100포인트 지불하고 이어보기</u></string>
+
 <!--    edit review 1-->
     <string name="write_review">리뷰 작성하기</string>
     <string name="cost">거주 비용</string>
