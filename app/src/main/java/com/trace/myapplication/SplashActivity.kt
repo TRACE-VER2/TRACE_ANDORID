@@ -3,9 +3,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.widget.ImageView
-import com.bumptech.glide.Glide
 import com.trace.myapplication.R.*
+import com.trace.myapplication.main.MainActivity
 
 
 class SplashActivity : Activity() {
