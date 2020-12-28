@@ -90,7 +90,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp"
                 android:fontFamily="@font/netmarblel"
-                android:text="검색하고 싶은 주소/해시테그를 입력하세요"
+                android:text="검색하고 싶은 주소를 입력하세요"
                 android:textColor="@color/colorDarkGray"
                 android:textSize="12dp"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_search_sq2"
@@ -189,7 +189,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
-
                 tools:listitem="@layout/item_mainlist" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

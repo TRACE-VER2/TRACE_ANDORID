@@ -1,4 +1,4 @@
-package com.trace.myapplication.main.recyclerview
+package com.trace.myapplication.main.mainRecyclerview
 
 data class MainListData(
     var star:Int,

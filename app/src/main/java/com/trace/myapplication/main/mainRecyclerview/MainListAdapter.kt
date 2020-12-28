@@ -1,13 +1,10 @@
-package com.trace.myapplication.main.recyclerview
+package com.trace.myapplication.main.mainRecyclerview
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
-import com.trace.myapplication.databinding.ActivityLoginBinding
-import com.trace.myapplication.databinding.ActivityMainBinding
-import com.trace.myapplication.databinding.FragmentKingoFirstBinding
 
 class MainListAdapter(private val context: Context): RecyclerView.Adapter<MainListViewHolder>(){
     //private lateinit var binding: ActivityMainBinding
