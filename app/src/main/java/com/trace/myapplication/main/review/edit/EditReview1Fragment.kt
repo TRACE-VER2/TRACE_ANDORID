@@ -36,7 +36,7 @@ class EditReview1Fragment: Fragment() {
 
     private fun setBtn(){
         vBinding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.editReview2Fragment)
+            findNavController().navigate(R.id.action_editReview1Fragment2_to_editReview2Fragment2)
         }
     }
 }
