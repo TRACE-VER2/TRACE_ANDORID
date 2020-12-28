@@ -31,9 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/tv_view_all_reviews">
-            <include
-                android:id="@+id/included_user_review"
-                layout="@layout/fragment_user_review"/>
+<!--            <include-->
+<!--                android:id="@+id/included_user_review"-->
+<!--                layout="@layout/fragment_user_review"/>-->
         </FrameLayout>
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_room_available"
@@ -55,6 +55,22 @@
                 android:text="@string/room_available" />
         </androidx.cardview.widget.CardView>
 
+        <Button
+            android:id="@+id/btn_to_edit_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="To Edit Review"/>
+
+        <Button
+            android:id="@+id/btn_to_review_detail_test"
+            app:backgroundTint="#FF8888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_to_edit_test"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="to review detail"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -13,15 +13,16 @@
             android:name=".SignupActivity"
             android:label="@string/title_activity_signup"></activity>
         <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".main.test.TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main.MainActivity" />
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".main.test.TestActivity"/>
     </application>
 
 </manifest>

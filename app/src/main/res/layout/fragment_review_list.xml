@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorBackground">
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_review_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

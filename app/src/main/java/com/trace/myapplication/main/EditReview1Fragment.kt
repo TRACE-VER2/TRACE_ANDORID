@@ -1,11 +1,13 @@
 package com.trace.myapplication.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentEditReview1Binding
 import com.trace.myapplication.databinding.FragmentReviewBinding
