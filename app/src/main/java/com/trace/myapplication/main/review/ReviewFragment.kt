@@ -36,12 +36,6 @@ class ReviewFragment: Fragment() {
         setBuildingInfo()
         setReviewList()
 
-        vBinding.btnToEditTest.setOnClickListener{
-            findNavController().navigate(R.id.editReview1Fragment2)
-        }
-        vBinding.btnToReviewDetailTest.setOnClickListener{
-            setUserReview()
-        }
     }
 
     private fun setBuildingInfo(){
