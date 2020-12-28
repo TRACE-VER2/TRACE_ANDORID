@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.trace.myapplication.ListFragment"
+        android:name="com.trace.myapplication.main.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <argument

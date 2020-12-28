@@ -10,7 +10,8 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_const_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +23,7 @@
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
-                android:layout_height="225dp"
+                android:layout_height="240dp"
                 android:background="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +32,7 @@
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
-                android:layout_height="356dp"
+                android:layout_height="360dp"
                 android:layout_marginTop="6dp"
                 android:background="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,14 +40,129 @@
                 app:layout_constraintTop_toBottomOf="@+id/view" />
 
             <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:src="@drawable/main_map_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <ImageView
                 android:id="@+id/iv_user_check_logo"
                 android:layout_width="200dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="63dp"
+                android:layout_marginTop="55dp"
                 android:src="@drawable/trace_new_logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_search_sq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="101dp"
+                android:layout_marginRight="101dp"
+                android:src="@drawable/search_sq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/iv_user_check_logo" />
+
+            <ImageView
+                android:id="@+id/btn_search_sq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_sq_2"
+                app:layout_constraintStart_toEndOf="@+id/btn_search_sq2"
+                app:layout_constraintTop_toTopOf="@+id/btn_search_sq2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/netmarblel"
+                android:text="검색하고 싶은 주소를 입력하세요"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_search_sq2"
+                app:layout_constraintEnd_toEndOf="@+id/btn_search_sq2"
+                app:layout_constraintStart_toStartOf="@+id/btn_search_sq2"
+                app:layout_constraintTop_toTopOf="@+id/btn_search_sq2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/netmarblem"
+                android:text="검색"
+                android:textColor="#070000"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_search_sq"
+                app:layout_constraintEnd_toEndOf="@+id/btn_search_sq"
+                app:layout_constraintStart_toEndOf="@+id/btn_search_sq2"
+                app:layout_constraintStart_toStartOf="@+id/btn_search_sq"
+                app:layout_constraintTop_toTopOf="@+id/btn_search_sq" />
+
+            <ImageView
+                android:id="@+id/btn_sidedoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/btn_sidedoor"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/btn_hansung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/btn_hansung"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/btn_maindoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:src="@drawable/btn_maindoor"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/btn_daehakro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/btn_daehakro"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/btn_irongate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginBottom="60dp"
+                android:src="@drawable/btn_irongate"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -68,13 +184,70 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:listitem="@layout/item_mainlist" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:padding="0dp"
+        android:src="@drawable/floating_button_plus"
+        app:layout_constraintBottom_toTopOf="@+id/main_const_bottom"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_const_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorDarkGray"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:id="@+id/view4"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_margin="1dp"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
