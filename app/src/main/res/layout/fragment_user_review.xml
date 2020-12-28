@@ -26,16 +26,17 @@
                 layout="@layout/item_stars"/>
         </FrameLayout>
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_user_review_photos"
+            android:id="@+id/rv_review_detail_photos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_margin"
             app:layout_constraintTop_toBottomOf="@id/tv_reviewer_id"/>
         <LinearLayout
             android:id="@+id/ll_card_user_review_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rv_user_review_photos"
+            app:layout_constraintTop_toBottomOf="@id/rv_review_detail_photos"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
@@ -137,12 +138,15 @@
                 android:layout_margin="@dimen/text_margin"
                 android:text="@string/remodeling"/>
         </LinearLayout>
+
         <TextView
             android:id="@+id/tv_option"
             app:layout_constraintTop_toBottomOf="@id/ll_card_user_review_left"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="@dimen/section_margin"
             android:text="옵션: "/>
         <TextView
             android:id="@+id/tv_surroundings"
@@ -157,10 +161,12 @@
             app:layout_constraintTop_toBottomOf="@id/tv_surroundings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="@string/written_review"
+            android:layout_marginTop="@dimen/section_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:text="@string/comment"
             android:textSize="@dimen/text_big"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_written_review_content"
@@ -168,6 +174,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="1년 살았는데 ..."/>
+            android:text="1년 살았는데 채광이 ..."/>
+
+        <Button
+            android:id="@+id/btn_pay_and_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_margin"
+            app:layout_constraintTop_toBottomOf="@id/tv_written_review"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"
+            android:text="@string/pay_and_read_more"
+            android:textColor="@color/hyperLink"/>
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            app:layout_constraintTop_toBottomOf="@id/btn_pay_and_read_more"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="카카오톡 id: jonathan"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
