@@ -40,10 +40,21 @@
             android:text="@string/build_date"/>
         <TextView
             android:id="@+id/tv_score_avg"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_build_date"
             android:layout_margin="@dimen/text_margin"
             android:text="@string/score_avg"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_score_avg"
+            app:layout_constraintTop_toTopOf="@id/tv_score_avg"
+            app:layout_constraintBottom_toBottomOf="@id/tv_score_avg">
+            <include
+                android:id="@+id/included_stars"
+                layout="@layout/item_stars"/>
+        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
