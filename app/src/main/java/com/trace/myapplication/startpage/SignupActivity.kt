@@ -16,7 +16,7 @@ class SignupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_signup)
 
         val navHostSignupFragment =
-                supportFragmentManager.findFragmentById(R.id.nav_host_fragment_signup) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_signup) as NavHostFragment
         //val navSignupController = navHostSignupFragment.navController
         //appBarSignupConfiguration = AppBarConfiguration(navSignupController.graph)
         //setupActionBarWithNavController(navSignupController, appBarSignupConfiguration)

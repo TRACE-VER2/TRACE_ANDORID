@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_signup"
+    app:startDestination="@id/choosePreferFragment">
+
+    <fragment
+        android:id="@+id/choosePreferFragment"
+        android:name="com.trace.myapplication.startpage.ChoosePreferFragment"
+        android:label="fragment_choose_prefer"
+        tools:layout="@layout/fragment_choose_prefer" >
+        <action
+            android:id="@+id/action_choosePreferFragment_to_userCheckFragment"
+            app:destination="@id/userCheckFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userCheckFragment"
+        android:name="com.trace.myapplication.startpage.UserCheckFragment"
+        android:label="fragment_user_check"
+        tools:layout="@layout/fragment_user_check" >
+        <action
+            android:id="@+id/action_userCheckFragment_to_kingoFirstFragment"
+            app:destination="@id/kingoFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kingoFirstFragment"
+        android:name="com.trace.myapplication.startpage.KingoFirstFragment"
+        android:label="fragment_kingo_first"
+        tools:layout="@layout/fragment_kingo_first" >
+        <action
+            android:id="@+id/action_kingoFirstFragment_to_kingoSecondFragment"
+            app:destination="@id/kingoSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kingoSecondFragment"
+        android:name="com.trace.myapplication.startpage.KingoSecondFragment"
+        android:label="fragment_kingo_second"
+        tools:layout="@layout/fragment_kingo_second" >
+        <action
+            android:id="@+id/action_kingoSecondFragment_to_idSettingFragment"
+            app:destination="@id/idSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/idSettingFragment"
+        android:name="com.trace.myapplication.startpage.IdSettingFragment"
+        android:label="fragment_id_setting"
+        tools:layout="@layout/fragment_id_setting" />
+</navigation>
