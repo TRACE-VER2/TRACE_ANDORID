@@ -10,7 +10,9 @@
         app:cardElevation="@dimen/card_elevation">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_interior_margin"
+            android:layout_marginEnd="@dimen/card_interior_margin">
             <TextView
                 android:id="@+id/tv_write_review"
                 app:layout_constraintTop_toTopOf="parent"

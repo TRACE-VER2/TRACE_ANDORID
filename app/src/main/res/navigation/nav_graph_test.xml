@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/reviewFragment"
-        android:name="com.trace.myapplication.main.ReviewFragment"
+        android:name="com.trace.myapplication.main.review.ReviewFragment"
         android:label="ReviewFragment"
         tools:layout="@layout/fragment_review">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/editReview1Fragment"
-        android:name="com.trace.myapplication.main.EditReview1Fragment"
+        android:name="com.trace.myapplication.main.review.edit.EditReview1Fragment"
         android:label="EditReview1Fragment"
         tools:layout="@layout/fragment_edit_review_1">
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/editReview2Fragment"
-        android:name="com.trace.myapplication.main.EditReview2Fragment"
+        android:name="com.trace.myapplication.main.review.edit.EditReview2Fragment"
         android:label="EditReview2Fragment"
         tools:layout="@layout/fragment_edit_review_2"/>
 </navigation>

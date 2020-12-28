@@ -1,4 +1,4 @@
-package com.trace.myapplication.main
+package com.trace.myapplication.main.review
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.trace.myapplication.databinding.FragmentReviewBinding
 import com.trace.myapplication.databinding.FragmentUserReviewBinding
 
-class UserReviewFragment: Fragment() {
+class ReviewDetailFragment: Fragment() {
 
     private lateinit var _vBinding: FragmentUserReviewBinding
     private val vBinding

@@ -1,16 +1,11 @@
-package com.trace.myapplication.main
+package com.trace.myapplication.main.review
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.MutableLiveData
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentReviewBinding
 
@@ -61,7 +56,7 @@ class ReviewFragment: Fragment() {
 
     private fun setUserReview(){
         parent.supportFragmentManager.beginTransaction()
-            .add(R.id.frame_under_building_info, UserReviewFragment())
+            .add(R.id.frame_under_building_info, ReviewDetailFragment())
             .addToBackStack(null)
             .commit()
     }
