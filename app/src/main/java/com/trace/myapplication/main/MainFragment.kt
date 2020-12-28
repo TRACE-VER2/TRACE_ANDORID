@@ -8,10 +8,14 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 
 import com.trace.myapplication.R
+import com.trace.myapplication.main.recyclerview.MainListAdapter
+import com.trace.myapplication.main.recyclerview.MainListData
 import kotlinx.android.synthetic.main.fragment_main.*
 
 
 class MainFragment : Fragment() {
+    lateinit var mainlistAdapter: MainListAdapter
+    var datas = mutableListOf<MainListData>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +35,33 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        mainlistAdapter= MainListAdapter(view.context)
+        rv_main_list.adapter=mainlistAdapter
+        loadDatas()
+
+    }
+
+    private fun loadDatas(){
+        datas.apply {
+            add(
+                MainListData(
+                    address = "성북구 성북동 1가 범진빌리지",
+                    star = 5
+                )
+            )
+            add(
+                MainListData(
+                    address = "성북구 성북동 1가 범진빌리지 3",
+                    star = 3
+                )
+            )
+        }
+        mainlistAdapter.datas=datas
+        mainlistAdapter.notifyDataSetChanged()
+    }
+
+}
+
 //        button_for_test_tolist.setOnClickListener {
 //
 //            //addextra보내기
@@ -45,6 +76,3 @@ class MainFragment : Fragment() {
 //        button_for_test_toreview.setOnClickListener {
 //            view.findNavController().navigate(R.id.action_mainFragment_to_addReviewFragment)
 //        }
-    }
-
-}
