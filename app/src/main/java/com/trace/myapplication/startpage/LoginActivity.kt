@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.ActivityLoginBinding
 import com.trace.myapplication.main.MainActivity
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
