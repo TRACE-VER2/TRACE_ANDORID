@@ -1,16 +1,13 @@
 package com.trace.myapplication.main.review.edit
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentEditReview1Binding
-import com.trace.myapplication.databinding.FragmentReviewBinding
 
 class EditReview1Fragment: Fragment() {
     private lateinit var _vBinding: FragmentEditReview1Binding
@@ -36,7 +33,7 @@ class EditReview1Fragment: Fragment() {
 
     private fun setBtn(){
         vBinding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.action_editReview1Fragment2_to_editReview2Fragment2)
+            findNavController().navigate(R.id.action_editReview1Fragment_to_editReview2Fragment)
         }
     }
 }

@@ -43,7 +43,7 @@ class MainFragment : Fragment() {
         }
 
         binding.mainFloating.setOnClickListener {
-            view.findNavController().navigate(R.id.action_mainFragment_to_editReview1Fragment2)
+            view.findNavController().navigate(R.id.action_mainFragment_to_editReview1Fragment)
         }
 
         return view

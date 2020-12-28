@@ -5,14 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentListBinding
 import com.trace.myapplication.main.ListRecyclerView.ListPageAdapter
 import com.trace.myapplication.main.ListRecyclerView.ListPageData
-import com.trace.myapplication.main.mainRecyclerview.MainListAdapter
-import com.trace.myapplication.main.mainRecyclerview.MainListData
 import kotlinx.android.synthetic.main.fragment_list.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,7 +33,7 @@ class ListFragment : Fragment() {
         // Inflate the layout for this fragment
 
         binding.listBtnSearch.setOnClickListener {
-            view.findNavController().navigate(R.id.reviewFragment3)
+            view.findNavController().navigate(R.id.reviewFragment)
         }
 
 
