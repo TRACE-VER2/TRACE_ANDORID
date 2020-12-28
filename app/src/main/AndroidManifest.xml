@@ -2,23 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.trace.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+
+        >
         <activity
-            android:name=".SignupActivity"
+            android:name=".startpage.SignupActivity"
             android:label="@string/title_activity_signup"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".startpage.LoginActivity">
+
         </activity>
         <activity android:name=".main.MainActivity" />
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".main.test.TestActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

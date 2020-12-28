@@ -6,6 +6,6 @@
     android:background="@drawable/bg_grad_3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".startpage.SignupActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

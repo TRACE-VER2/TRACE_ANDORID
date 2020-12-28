@@ -1,8 +1,8 @@
-package com.trace.myapplication
+package com.trace.myapplication.startpage
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.trace.myapplication.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
