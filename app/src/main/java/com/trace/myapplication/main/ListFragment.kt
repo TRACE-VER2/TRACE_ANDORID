@@ -35,6 +35,10 @@ class ListFragment : Fragment() {
         val view = binding.root
         // Inflate the layout for this fragment
 
+        binding.listBtnSearch.setOnClickListener {
+            view.findNavController().navigate(R.id.reviewFragment3)
+        }
+
 
         return view
     }

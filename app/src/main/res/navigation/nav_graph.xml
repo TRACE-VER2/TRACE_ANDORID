@@ -14,8 +14,8 @@
             android:id="@+id/action_mainFragment_to_listFragment"
             app:destination="@id/listFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_addReviewFragment"
-            app:destination="@id/addReviewFragment" />
+            android:id="@+id/action_mainFragment_to_editReview1Fragment2"
+            app:destination="@id/editReview1Fragment2" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -26,17 +26,24 @@
             android:name="text"
             app:argType="string" />
         <action
-            android:id="@+id/action_listFragment_to_buildingDetailFragment"
-            app:destination="@id/buildingDetailFragment" />
+            android:id="@+id/action_listFragment_to_reviewFragment3"
+            app:destination="@id/reviewFragment3" />
     </fragment>
     <fragment
-        android:id="@+id/addReviewFragment"
-        android:name="com.trace.myapplication.AddReviewFragment"
-        android:label="fragment_add_review"
-        tools:layout="@layout/fragment_add_review" />
+        android:id="@+id/editReview1Fragment2"
+        android:name="com.trace.myapplication.main.review.edit.EditReview1Fragment"
+        android:label="EditReview1Fragment"
+        tools:layout="@layout/fragment_edit_review_1">
+        <action
+            android:id="@+id/action_editReview1Fragment2_to_editReview2Fragment2"
+            app:destination="@id/editReview2Fragment2" />
+    </fragment>
     <fragment
-        android:id="@+id/buildingDetailFragment"
-        android:name="com.trace.myapplication.BuildingDetailFragment"
-        android:label="fragment_building_detail"
-        tools:layout="@layout/fragment_building_detail" />
+        android:id="@+id/editReview2Fragment2"
+        android:name="com.trace.myapplication.main.review.edit.EditReview2Fragment"
+        android:label="EditReview2Fragment" />
+    <fragment
+        android:id="@+id/reviewFragment3"
+        android:name="com.trace.myapplication.main.review.ReviewFragment"
+        android:label="ReviewFragment" />
 </navigation>

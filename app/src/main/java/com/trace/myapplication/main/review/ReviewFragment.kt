@@ -37,7 +37,7 @@ class ReviewFragment: Fragment() {
         setReviewList()
 
         vBinding.btnToEditTest.setOnClickListener{
-            findNavController().navigate(R.id.editReview1Fragment)
+            findNavController().navigate(R.id.editReview1Fragment2)
         }
         vBinding.btnToReviewDetailTest.setOnClickListener{
             setUserReview()
