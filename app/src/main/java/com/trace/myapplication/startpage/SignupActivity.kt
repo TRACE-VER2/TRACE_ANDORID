@@ -28,5 +28,6 @@ class SignupActivity : AppCompatActivity() {
         return navController.navigateUp(appBarSignupConfiguration)
                 || super.onSupportNavigateUp()
     }
+
  */
 }
