@@ -11,24 +11,24 @@ import com.trace.myapplication.main.mainRecyclerview.MainListData
 
 class ListPageViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
     private lateinit var binding: FragmentListBinding
-    val rv_address=itemView.findViewById<TextView>(R.id.item_tv_adress)
+    val list_rv_address=itemView.findViewById<TextView>(R.id.list_item_tv_adress)
 
-    val rv_star1=itemView.findViewById<ImageView>(R.id.img_star_1st)
-    val rv_star2=itemView.findViewById<ImageView>(R.id.img_star_2nd)
-    val rv_star3=itemView.findViewById<ImageView>(R.id.img_star_3rd)
-    val rv_star4=itemView.findViewById<ImageView>(R.id.img_star_4th)
-    val rv_star5=itemView.findViewById<ImageView>(R.id.img_star_5th)
+    val list_rv_star1=itemView.findViewById<ImageView>(R.id.list_img_star_1st)
+    val list_rv_star2=itemView.findViewById<ImageView>(R.id.list_img_star_2nd)
+    val list_rv_star3=itemView.findViewById<ImageView>(R.id.list_img_star_3rd)
+    val list_rv_star4=itemView.findViewById<ImageView>(R.id.list_img_star_4th)
+    val list_rv_star5=itemView.findViewById<ImageView>(R.id.list_img_star_5th)
 
-    var stars = mutableListOf<ImageView>(rv_star1,rv_star2,rv_star3,rv_star4,rv_star5)
+    var list_stars = mutableListOf<ImageView>(list_rv_star1,list_rv_star2,list_rv_star3,list_rv_star4,list_rv_star5)
 
     fun bind(listPageData: ListPageData){
-        rv_address.text=listPageData.address
+        list_rv_address.text=listPageData.address
         for (i in 0..4){
             if (listPageData.star-1>=i){
-                stars[i].setImageResource(R.drawable.star_yes)
+                list_stars[i].setImageResource(R.drawable.star_yes)
             }
             else{
-                stars[i].setImageResource(R.drawable.star_blank)
+                list_stars[i].setImageResource(R.drawable.star_blank)
             }
         }
 

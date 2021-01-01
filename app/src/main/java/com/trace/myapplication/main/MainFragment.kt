@@ -52,13 +52,13 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mainlistAdapter= MainListAdapter(view.context)
-        //rv_main_list.adapter=mainlistAdapter
         binding.rvMainList.adapter=mainlistAdapter
         loadDatas()
 
     }
 
     private fun loadDatas(){
+        datas = mutableListOf<MainListData>()
         datas.apply {
             add(
                 MainListData(
