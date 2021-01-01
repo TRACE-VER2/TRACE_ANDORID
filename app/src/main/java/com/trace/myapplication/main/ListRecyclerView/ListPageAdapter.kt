@@ -12,7 +12,7 @@ class ListPageAdapter(private val context: Context): RecyclerView.Adapter<ListPa
     //private lateinit var binding: ActivityMainBinding
     var datas= mutableListOf<ListPageData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListPageViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_mainlist,parent,false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_listpage,parent,false)
         return ListPageViewHolder(view)
     }
 

@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+
 
         >
         <activity

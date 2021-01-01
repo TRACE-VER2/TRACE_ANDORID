@@ -41,6 +41,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/netmarblem"
         android:hint="비밀번호"
+        android:inputType="textPassword"
         android:lineSpacingExtra="5dp"
         android:textColor="@color/colorDarkGray"
         android:textSize="17dp"

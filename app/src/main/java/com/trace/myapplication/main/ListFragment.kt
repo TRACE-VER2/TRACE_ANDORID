@@ -56,6 +56,7 @@ class ListFragment : Fragment() {
     }
 
     private fun loadDatas(){
+        datas = mutableListOf<ListPageData>()
         datas.apply {
             add(
                 ListPageData(
