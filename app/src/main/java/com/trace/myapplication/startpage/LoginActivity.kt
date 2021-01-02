@@ -8,9 +8,9 @@ import android.widget.Toast
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.ActivityLoginBinding
 import com.trace.myapplication.main.MainActivity
-import com.trace.myapplication.startpage.Server.RequestLogin
+import com.trace.myapplication.startpage.dataType.RequestLogin
 import com.trace.myapplication.Server.RequestToServer
-import com.trace.myapplication.startpage.Server.ResponseLogin
+import com.trace.myapplication.startpage.dataType.ResponseLogin
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
