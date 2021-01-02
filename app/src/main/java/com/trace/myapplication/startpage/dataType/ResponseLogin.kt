@@ -1,4 +1,4 @@
-package com.trace.myapplication.startpage.Server
+package com.trace.myapplication.startpage.dataType
 
 data class ResponseLogin(
         val code : Int,
