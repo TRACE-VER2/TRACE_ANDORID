@@ -43,7 +43,8 @@ class KingoFirstFragment : Fragment() {
             if (binding.etKingoEmail.text.isNullOrBlank()){
                 Toast.makeText(activity,"빈칸을 모두 채워주세요", Toast.LENGTH_SHORT).show()
             }else {
-                signUpViewModel.email=binding.etKingoEmail.text.toString()
+                Toast.makeText(activity,"메일 요청중 입니다. 잠시만 기다려주세요.", Toast.LENGTH_SHORT).show()
+
 
                 requestToServer.service.kingoRequest(
                         "${binding.etKingoEmail.text.toString()}"
@@ -61,6 +62,7 @@ class KingoFirstFragment : Fragment() {
                                 Log.d("성공", response.body().toString())
                                 Toast.makeText(activity,"메일이 발송되었습니다.", Toast.LENGTH_SHORT).show()
                                 signUpViewModel.verificationKey=response.body()!!.data!!.verificationKey.toString()
+                                signUpViewModel.email=binding.etKingoEmail.text.toString()
                                 view.findNavController().navigate(R.id.action_kingoFirstFragment_to_kingoSecondFragment)
 
                             } else {

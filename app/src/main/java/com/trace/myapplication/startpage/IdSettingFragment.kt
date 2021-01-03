@@ -118,21 +118,21 @@ class IdSettingFragment : Fragment() {
             }else {
                 Log.d("요청", "가입요청")
                 Log.d("요청","${binding.etIdSetting.text.toString()} and ${binding.etSetPasswordCheck.text.toString()} and ${signUpViewModel.email} " +
-                        "and ${signUpViewModel.username} and ${signUpViewModel.phoneNum} and ${preflist.toTypedArray().toString()}")
+                        "and ${signUpViewModel.username} and ${signUpViewModel.phoneNum} and ${preflist.toList().toString()}")
 
                 //회원가입 요청
                 requestToServer.service.signUpRequest(
                         RequestSignUp(
                                 userId = binding.etIdSetting.text.toString(),
                                 password = binding.etSetPasswordCheck.text.toString(),
-                                email = signUpViewModel.email,
-                                name=signUpViewModel.username,
-                                phoneNum = signUpViewModel.phoneNum,
-                                preferences = preflist.toTypedArray()
+                                email = signUpViewModel.email.toString(),
+                                name=signUpViewModel.username.toString(),
+                                phoneNum = signUpViewModel.phoneNum.toString(),
+                                preferences = preflist.toList()
                         )   //로그인 정보를 전달
                 ).enqueue(object : Callback<ResponseBasic> {
                     override fun onFailure(call: Call<ResponseBasic>, t: Throwable) {
-                        Log.d("통신 실패", "${t.message }")
+                        Log.d("통신 실패", "${t.message}")
                     }
 
                     override fun onResponse(
@@ -140,6 +140,7 @@ class IdSettingFragment : Fragment() {
                             response: Response<ResponseBasic>
                     ) {
                         if (response.isSuccessful) {
+                            Log.d("성공", response.toString())
                             if (response.body()!!.success) {
                                 Log.d("성공", response.body().toString())
                                 Toast.makeText(activity, "회원가입에 성공했습니다.", Toast.LENGTH_SHORT).show()
@@ -152,6 +153,8 @@ class IdSettingFragment : Fragment() {
                         }
                     }
                 })
+
+                Log.d("요청", "가입요청끝")
             }
 
         }
