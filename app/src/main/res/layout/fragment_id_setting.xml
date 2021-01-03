@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_user_check_logo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_id_setting"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
@@ -38,7 +38,7 @@
         android:textColor="@color/colorDarkGray"
         android:textSize="17sp"
         android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/et_set_password"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
@@ -48,9 +48,9 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:src="@drawable/signup_iv_check"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintStart_toEndOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText" />
+        app:layout_constraintBottom_toBottomOf="@+id/et_id_setting"
+        app:layout_constraintStart_toEndOf="@+id/et_id_setting"
+        app:layout_constraintTop_toTopOf="@+id/et_id_setting" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="@+id/signup_btn_check" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_set_password"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -77,10 +77,10 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_id_setting" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/et_set_password_check"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -90,9 +90,9 @@
         android:textColor="@color/colorDarkGray"
         android:textSize="17sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintEnd_toEndOf="@+id/et_set_password"
+        app:layout_constraintStart_toStartOf="@+id/et_set_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_set_password" />
 
     <ImageView
         android:id="@+id/signup_btn_agree"
@@ -100,9 +100,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:src="@drawable/btn_agree_unpick"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintEnd_toEndOf="@+id/et_set_password_check"
+        app:layout_constraintStart_toStartOf="@+id/et_set_password_check"
+        app:layout_constraintTop_toBottomOf="@+id/et_set_password_check" />
 
     <ImageView
         android:id="@+id/signup_btn_last"
