@@ -30,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_user_check_logo" />
 
     <EditText
+        android:id="@+id/et_kingo_verify"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
