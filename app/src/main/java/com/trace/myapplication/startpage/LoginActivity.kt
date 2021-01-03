@@ -9,7 +9,7 @@ import com.trace.myapplication.R
 import com.trace.myapplication.databinding.ActivityLoginBinding
 import com.trace.myapplication.main.MainActivity
 import com.trace.myapplication.startpage.dataType.RequestLogin
-import com.trace.myapplication.Server.RequestToServer
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.startpage.dataType.ResponseLogin
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,7 +18,7 @@ import retrofit2.Response
 var myjwt="";
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
-    val requestToServer = RequestToServer
+    val requestToServer = Repository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

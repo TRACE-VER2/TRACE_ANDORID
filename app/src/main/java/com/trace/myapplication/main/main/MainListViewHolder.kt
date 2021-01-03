@@ -1,4 +1,4 @@
-package com.trace.myapplication.main.mainRecyclerview
+package com.trace.myapplication.main.main
 
 import android.view.View
 import android.widget.ImageView

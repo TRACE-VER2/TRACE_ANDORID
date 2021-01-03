@@ -1,4 +1,4 @@
-package com.trace.myapplication.main
+package com.trace.myapplication.main.main
 
 import android.os.Bundle
 import android.util.Log
@@ -9,11 +9,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.Server.RequestToServer
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.databinding.FragmentMainBinding
 import com.trace.myapplication.main.dataType.ResponseMainList
-import com.trace.myapplication.main.mainRecyclerview.MainListAdapter
-import com.trace.myapplication.main.mainRecyclerview.MainListData
 import com.trace.myapplication.startpage.myjwt
 import retrofit2.Call
 import retrofit2.Callback
@@ -23,7 +21,7 @@ import retrofit2.Response
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     lateinit var mainlistAdapter: MainListAdapter
-    val requestToServer=RequestToServer
+    val requestToServer=Repository
 
     var datas = mutableListOf<MainListData>()
 

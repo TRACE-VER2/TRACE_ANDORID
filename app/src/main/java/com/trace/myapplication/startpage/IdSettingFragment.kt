@@ -1,6 +1,5 @@
 package com.trace.myapplication.startpage
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,16 +10,10 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.Server.RequestToServer
-import com.trace.myapplication.databinding.FragmentChoosePreferBinding
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.databinding.FragmentIdSettingBinding
-import com.trace.myapplication.main.MainActivity
-import com.trace.myapplication.startpage.dataType.RequestLogin
 import com.trace.myapplication.startpage.dataType.RequestSignUp
 import com.trace.myapplication.startpage.dataType.ResponseBasic
-import com.trace.myapplication.startpage.dataType.ResponseLogin
-import kotlinx.android.synthetic.main.fragment_id_setting.*
-import kotlinx.android.synthetic.main.fragment_kingo_first.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +22,7 @@ import retrofit2.Response
 class IdSettingFragment : Fragment() {
     private lateinit var binding: FragmentIdSettingBinding
     val signUpViewModel by activityViewModels<SignUpViewModel>()
-    val requestToServer=RequestToServer
+    val requestToServer=Repository
     var agree=false
     val prefString= mutableListOf<String>("#햇살가득","#벌레_없어요","#거의_독서실","#내방크기_운동장","#저렴해요")
     val prefEng= mutableListOf<String>("SUNNY","NO_BUG","QUIET","LARGE","CHEAP")

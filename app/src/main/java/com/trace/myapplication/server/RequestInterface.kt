@@ -1,4 +1,4 @@
-package com.trace.myapplication.Server
+package com.trace.myapplication.server
 
 import com.trace.myapplication.main.dataType.ResponseMainList
 import com.trace.myapplication.startpage.dataType.*

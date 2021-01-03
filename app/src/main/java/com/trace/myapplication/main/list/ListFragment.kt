@@ -1,4 +1,4 @@
-package com.trace.myapplication.main
+package com.trace.myapplication.main.list
 
 import android.os.Bundle
 import android.util.Log
@@ -9,14 +9,10 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.trace.myapplication.R
-import com.trace.myapplication.Server.RequestToServer
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.databinding.FragmentListBinding
-import com.trace.myapplication.main.ListRecyclerView.ListPageAdapter
-import com.trace.myapplication.main.ListRecyclerView.ListPageData
 import com.trace.myapplication.main.dataType.ResponseMainList
-import com.trace.myapplication.main.mainRecyclerview.MainListData
 import com.trace.myapplication.startpage.myjwt
-import kotlinx.android.synthetic.main.fragment_list.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +25,7 @@ class ListFragment : Fragment() {
     private lateinit var binding: FragmentListBinding
     lateinit var listPageAdapter: ListPageAdapter
     var datas = mutableListOf<ListPageData>()
-    val requestToServer=RequestToServer
+    val requestToServer=Repository
 
     //nav 도착하는 쪽 코드
     val args: ListFragmentArgs by navArgs()
@@ -64,9 +60,6 @@ class ListFragment : Fragment() {
         listPageAdapter= ListPageAdapter(view.context)
         binding.rvListPage.adapter=listPageAdapter
         loadDatas()
-
-
-
     }
 
     private fun loadDatas(){
