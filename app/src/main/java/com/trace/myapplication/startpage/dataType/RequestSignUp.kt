@@ -6,5 +6,5 @@ data class RequestSignUp(
         val email:String,
         val name:String,
         val phoneNum: String,
-        val preferences: Array<String>
+        val preferences: List<String>
 )

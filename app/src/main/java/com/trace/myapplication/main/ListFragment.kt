@@ -49,6 +49,9 @@ class ListFragment : Fragment() {
         binding.listBtnSearch.setOnClickListener {
             view.findNavController().navigate(R.id.reviewFragment)
         }
+        binding.listBtnBack.setOnClickListener{
+            view.findNavController().popBackStack()
+        }
 
 
         return view
