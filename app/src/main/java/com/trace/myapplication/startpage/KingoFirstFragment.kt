@@ -10,12 +10,9 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.Server.RequestToServer
-import com.trace.myapplication.databinding.FragmentChoosePreferBinding
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.databinding.FragmentKingoFirstBinding
-import com.trace.myapplication.startpage.dataType.ResponseBasic
 import com.trace.myapplication.startpage.dataType.ResponseKingo
-import kotlinx.android.synthetic.main.fragment_kingo_first.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,7 +20,7 @@ import retrofit2.Response
 
 class KingoFirstFragment : Fragment() {
     private lateinit var binding: FragmentKingoFirstBinding
-    val requestToServer= RequestToServer
+    val requestToServer= Repository
     val signUpViewModel by activityViewModels<SignUpViewModel>()
 
     override fun onCreateView(

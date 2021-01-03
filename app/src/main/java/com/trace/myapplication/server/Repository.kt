@@ -1,9 +1,9 @@
-package com.trace.myapplication.Server
+package com.trace.myapplication.server
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RequestToServer {
+object Repository {
     var retrofit = Retrofit.Builder()
             .baseUrl("http://jaggutrace.com")
             .addConverterFactory(GsonConverterFactory.create())

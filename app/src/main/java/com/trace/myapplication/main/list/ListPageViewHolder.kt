@@ -1,4 +1,4 @@
-package com.trace.myapplication.main.ListRecyclerView
+package com.trace.myapplication.main.list
 
 import android.view.View
 import android.widget.ImageView
@@ -6,8 +6,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentListBinding
-import com.trace.myapplication.databinding.FragmentMainBinding
-import com.trace.myapplication.main.mainRecyclerview.MainListData
 
 class ListPageViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
     private lateinit var binding: FragmentListBinding

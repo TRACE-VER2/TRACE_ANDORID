@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.trace.myapplication.main.MainFragment"
+        android:name="com.trace.myapplication.main.main.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.trace.myapplication.main.ListFragment"
+        android:name="com.trace.myapplication.main.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <argument

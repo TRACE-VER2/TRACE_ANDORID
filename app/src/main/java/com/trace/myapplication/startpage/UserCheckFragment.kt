@@ -10,13 +10,9 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.Server.RequestToServer
-import com.trace.myapplication.databinding.FragmentChoosePreferBinding
+import com.trace.myapplication.server.Repository
 import com.trace.myapplication.databinding.FragmentUserCheckBinding
-import com.trace.myapplication.main.dataType.ResponseMainList
-import com.trace.myapplication.main.mainRecyclerview.MainListData
 import com.trace.myapplication.startpage.dataType.ResponseBasic
-import kotlinx.android.synthetic.main.fragment_user_check.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,7 +20,7 @@ import retrofit2.Response
 class UserCheckFragment : Fragment() {
     private lateinit var binding: FragmentUserCheckBinding
     val signUpViewModel by activityViewModels<SignUpViewModel>()
-    val requestToServer = RequestToServer
+    val requestToServer = Repository
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

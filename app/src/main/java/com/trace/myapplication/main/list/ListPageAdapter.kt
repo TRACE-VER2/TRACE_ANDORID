@@ -1,12 +1,10 @@
-package com.trace.myapplication.main.ListRecyclerView
+package com.trace.myapplication.main.list
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.trace.myapplication.R
-import com.trace.myapplication.main.mainRecyclerview.MainListData
-import com.trace.myapplication.main.mainRecyclerview.MainListViewHolder
 
 class ListPageAdapter(private val context: Context): RecyclerView.Adapter<ListPageViewHolder>(){
     //private lateinit var binding: ActivityMainBinding
