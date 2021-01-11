@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.trace.myapplication.databinding.FragmentEditReview1Binding
 import com.trace.myapplication.databinding.FragmentEditReview2Binding
@@ -15,6 +16,7 @@ class EditReview2Fragment: Fragment() {
         get() = _vBinding
 
     private val parent by lazy{requireActivity()}
+    private val eViewModel: EditReviewViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -10,7 +10,9 @@
     <dimen name="card_elevation">3dp</dimen>
     <dimen name="text_margin">2dp</dimen>
     <dimen name="section_margin">10dp</dimen>
-    <dimen name="card_margin">4dp</dimen>
+    <dimen name="section_title">18sp</dimen>
+    <dimen name="card_margin">10dp</dimen>
     <dimen name="star">20dp</dimen>
     <dimen name="text_big">18sp</dimen>
+    <dimen name="btn_save_height">30dp</dimen>
 </resources>

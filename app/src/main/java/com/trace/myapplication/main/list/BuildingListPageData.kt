@@ -1,6 +1,6 @@
 package com.trace.myapplication.main.list
 
-data class ListPageData(
+data class BuildingListPageData(
     var star:Int,
     var address: String
 )

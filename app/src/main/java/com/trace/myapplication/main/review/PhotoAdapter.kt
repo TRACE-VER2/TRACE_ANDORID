@@ -7,13 +7,15 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.trace.myapplication.R
+import com.trace.myapplication.main.review.edit.PhotoUploadThumbnail
+import com.trace.myapplication.main.review.edit.PhotoViewThumbnail
 
-class PhotoAdapter: RecyclerView.Adapter<PhotoAdapter.PhotoThumbnail>() {
+class PhotoAdapter: RecyclerView.Adapter<PhotoThumbnail>() {
     var photos = listOf<String>()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoThumbnail {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewThumbnail {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_review_photo, parent,false)
-        return PhotoThumbnail(v)
+        return PhotoViewThumbnail(v)
     }
 
     override fun onBindViewHolder(holder: PhotoThumbnail, position: Int) {
@@ -21,13 +23,4 @@ class PhotoAdapter: RecyclerView.Adapter<PhotoAdapter.PhotoThumbnail>() {
     }
 
     override fun getItemCount(): Int = photos.size
-
-    class PhotoThumbnail(view: View): RecyclerView.ViewHolder(view){
-        fun bind(source: String){
-            val iv = itemView.findViewById<ImageView>(R.id.iv)
-            Glide.with(itemView.context)
-                    .load(source)
-                    .into(iv)
-        }
-    }
 }

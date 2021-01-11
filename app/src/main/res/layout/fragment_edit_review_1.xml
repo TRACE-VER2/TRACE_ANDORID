@@ -6,13 +6,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
         app:cardCornerRadius="@dimen/card_radius"
         app:cardElevation="@dimen/card_elevation">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/card_interior_margin"
-            android:layout_marginEnd="@dimen/card_interior_margin">
+            android:layout_margin="@dimen/card_interior_margin">
             <TextView
                 android:id="@+id/tv_write_review"
                 app:layout_constraintTop_toTopOf="parent"
@@ -20,8 +21,10 @@
                 android:layout_margin="@dimen/text_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/section_title"
                 android:text="@string/write_review"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/tv_address_content"
                 app:layout_constraintTop_toBottomOf="@id/tv_write_review"
@@ -49,23 +52,32 @@
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/residential_period"
                 android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/tv_period_from"
+
+            <EditText
+                android:id="@+id/et_period_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/tv_residential_period"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_margin="@dimen/text_margin"
-                android:text="2018.02"
-                android:textStyle=""/>
+                android:text="2000.01"/>
             <TextView
-                android:id="@+id/tv_period_to"
+                android:id="@+id/tv_wave"
+                app:layout_constraintTop_toTopOf="@id/et_period_from"
+                app:layout_constraintBottom_toBottomOf="@id/et_period_from"
+                app:layout_constraintStart_toEndOf="@id/et_period_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="@id/tv_period_from"
-                app:layout_constraintStart_toEndOf="@id/tv_period_from"
-                android:layout_margin="@dimen/text_margin"
-                android:text=" ~ 2020.02"/>
+                android:text=" ~ "
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/et_period_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/et_period_from"
+                app:layout_constraintStart_toEndOf="@id/tv_wave"
+                android:text="2000.12"/>
+
             <TextView
                 android:id="@+id/tv_cost"
                 android:layout_width="match_parent"
@@ -74,7 +86,7 @@
                 android:layout_marginStart="@dimen/text_margin"
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
-                app:layout_constraintTop_toBottomOf="@id/tv_period_from"
+                app:layout_constraintTop_toBottomOf="@id/et_period_from"
                 android:text="@string/cost"
                 android:textStyle="bold"/>
             <RadioGroup
@@ -234,12 +246,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/freeze_yes"/>
+                    android:text="@string/freeze_no"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/freeze_no"/>
+                    android:text="@string/freeze_yes"/>
             </RadioGroup>
 
             <TextView
@@ -296,7 +308,12 @@
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
+                    android:text="@string/mediocre"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/bad"/>
             </RadioGroup>
 
@@ -321,12 +338,22 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="@string/very_few"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/few"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/many"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="@string/few"/>
+                    android:layout_weight="1"
+                    android:text="@string/too_many"/>
             </RadioGroup>
 
             <Button
@@ -335,9 +362,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 app:layout_constraintTop_toBottomOf="@id/rg_insects"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="@dimen/text_margin"
+                android:layout_marginTop="@dimen/section_margin"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
                 android:background="@android:color/transparent"
                 android:text="@string/next"
                 android:textStyle="bold"

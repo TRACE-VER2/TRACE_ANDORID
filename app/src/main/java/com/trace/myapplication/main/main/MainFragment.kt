@@ -8,11 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.server.Repository
+import com.trace.myapplication.network.Repository
 import com.trace.myapplication.databinding.FragmentMainBinding
 import com.trace.myapplication.main.dataType.ResponseMainList
+import com.trace.myapplication.network.MainApiInterface
 import com.trace.myapplication.startpage.myjwt
+import kotlinx.android.synthetic.main.fragment_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -20,11 +23,16 @@ import retrofit2.Response
 
 class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
-    lateinit var mainlistAdapter: MainListAdapter
-    val requestToServer=Repository
+    lateinit var mainListAdapter: MainListAdapter
+    val requestToServer= Repository
 
     var datas = mutableListOf<MainListData>()
 
+    //TODO("service - Repository 에서 이동")
+    private val service by lazy {
+        Repository.retrofitJagguTrace.create(
+                MainApiInterface::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,20 +73,21 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mainlistAdapter= MainListAdapter(view.context)
-        binding.rvMainList.adapter=mainlistAdapter
-        loadDatas()
+        mainListAdapter= MainListAdapter(view.context)
+        binding.rvMainList.adapter=mainListAdapter
+        loadData()
 
+        setFAB()
     }
 
-    private fun loadDatas(){
+    private fun loadData(){
         var tmpjwt:String= "Bearer "+myjwt
         var tmpaddress: String
         var tmpstar=4
         Log.d("loadDatas", "함수진입+ ${tmpjwt}")
         datas = mutableListOf<MainListData>()
 
-        requestToServer.service.mainListRequest(
+        service.mainListRequest(
                 "${tmpjwt}"
         ).enqueue(object : Callback<ResponseMainList> {
             override fun onFailure(call: Call<ResponseMainList>, t: Throwable) {
@@ -104,8 +113,8 @@ class MainFragment : Fragment() {
                             }
 
                         }
-                        mainlistAdapter.datas=datas
-                        mainlistAdapter.notifyDataSetChanged()
+                        mainListAdapter.datas=datas
+                        mainListAdapter.notifyDataSetChanged()
                     } else {
                         Log.d("실패", "실패")
                     }
@@ -114,6 +123,12 @@ class MainFragment : Fragment() {
         })
 
 
+    }
+
+    private fun setFAB(){
+        main_floating.setOnClickListener{
+            findNavController().navigate(R.id.editReview1Fragment)
+        }
     }
 
 }
