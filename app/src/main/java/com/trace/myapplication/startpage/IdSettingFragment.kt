@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.server.Repository
+import com.trace.myapplication.network.Repository
 import com.trace.myapplication.databinding.FragmentIdSettingBinding
 import com.trace.myapplication.startpage.dataType.RequestSignUp
 import com.trace.myapplication.startpage.dataType.ResponseBasic
@@ -22,7 +22,7 @@ import retrofit2.Response
 class IdSettingFragment : Fragment() {
     private lateinit var binding: FragmentIdSettingBinding
     val signUpViewModel by activityViewModels<SignUpViewModel>()
-    val requestToServer=Repository
+    val requestToServer= Repository
     var agree=false
     val prefString= mutableListOf<String>("#햇살가득","#벌레_없어요","#거의_독서실","#내방크기_운동장","#저렴해요")
     val prefEng= mutableListOf<String>("SUNNY","NO_BUG","QUIET","LARGE","CHEAP")

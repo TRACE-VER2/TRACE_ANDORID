@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import com.trace.myapplication.R
-import com.trace.myapplication.server.Repository
+import com.trace.myapplication.network.Repository
 import com.trace.myapplication.databinding.FragmentUserCheckBinding
 import com.trace.myapplication.startpage.dataType.ResponseBasic
 import retrofit2.Call

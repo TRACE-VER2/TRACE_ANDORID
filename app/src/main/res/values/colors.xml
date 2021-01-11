@@ -9,4 +9,5 @@
     <color name="colorDark">#DADCDE</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="hyperLink">#0000EE</color>
+    <color name="black">#000000</color>
 </resources>

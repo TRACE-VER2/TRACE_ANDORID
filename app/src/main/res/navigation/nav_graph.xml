@@ -19,9 +19,9 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.trace.myapplication.main.list.ListFragment"
+        android:name="com.trace.myapplication.main.list.BuildingListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
+        tools:layout="@layout/fragment_building_list" >
         <argument
             android:name="text"
             app:argType="string" />

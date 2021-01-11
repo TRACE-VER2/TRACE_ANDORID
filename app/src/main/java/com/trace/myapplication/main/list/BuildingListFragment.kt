@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.trace.myapplication.R
-import com.trace.myapplication.server.Repository
-import com.trace.myapplication.databinding.FragmentListBinding
+import com.trace.myapplication.databinding.FragmentBuildingListBinding
+import com.trace.myapplication.network.Repository
 import com.trace.myapplication.main.dataType.ResponseMainList
 import com.trace.myapplication.startpage.myjwt
 import retrofit2.Call
@@ -21,11 +21,11 @@ import retrofit2.Response
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
 
-class ListFragment : Fragment() {
-    private lateinit var binding: FragmentListBinding
-    lateinit var listPageAdapter: ListPageAdapter
-    var datas = mutableListOf<ListPageData>()
-    val requestToServer=Repository
+class BuildingListFragment : Fragment() {
+    private lateinit var binding: FragmentBuildingListBinding
+    lateinit var buildingListPageAdapter: BuildingListPageAdapter
+    var datas = mutableListOf<BuildingListPageData>()
+    val requestToServer = Repository
 
     //nav 도착하는 쪽 코드
     val args: ListFragmentArgs by navArgs()
@@ -34,7 +34,7 @@ class ListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentListBinding.inflate(inflater, container, false)
+        binding = FragmentBuildingListBinding.inflate(inflater, container, false)
         val view = binding.root
         // Inflate the layout for this fragment
         var tmptitle="건물정보-"
@@ -57,8 +57,8 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         //앞 fragment에서 addextra기능
         //tv_list_fragment.text=args.text
-        listPageAdapter= ListPageAdapter(view.context)
-        binding.rvListPage.adapter=listPageAdapter
+        buildingListPageAdapter= BuildingListPageAdapter(view.context)
+        binding.rvListPage.adapter=buildingListPageAdapter
         loadDatas()
     }
 
@@ -67,7 +67,7 @@ class ListFragment : Fragment() {
         var tmpaddress: String
         var tmpstar=4
         Log.d("loadDatas", "함수진입+ ${tmpjwt}")
-        datas = mutableListOf<ListPageData>()
+        datas = mutableListOf<BuildingListPageData>()
         var tmppath=args.text
         Log.d("path:", "$tmppath")
 
@@ -90,15 +90,15 @@ class ListFragment : Fragment() {
                             tmpaddress += response.body()!!.data!!.content[i].lotNumber
 
                             datas.apply{
-                                add(ListPageData(
+                                add(BuildingListPageData(
                                         address = tmpaddress,
                                         star = tmpstar
                                 ))
                             }
 
                         }
-                        listPageAdapter.datas=datas
-                        listPageAdapter.notifyDataSetChanged()
+                        buildingListPageAdapter.datas=datas
+                        buildingListPageAdapter.notifyDataSetChanged()
                     } else {
                         Log.d("실패", "실패")
                     }

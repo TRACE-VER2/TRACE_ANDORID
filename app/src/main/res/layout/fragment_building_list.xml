@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBack"
-    tools:context=".main.list.ListFragment">
+    tools:context=".main.list.BuildingListFragment">
 
     <ImageView
         android:id="@+id/list_btn_back"
@@ -51,6 +51,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_list_title"
-        tools:listitem="@layout/item_listpage" />
+        tools:listitem="@layout/item_building_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

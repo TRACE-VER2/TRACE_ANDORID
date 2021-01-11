@@ -7,14 +7,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
         app:cardCornerRadius="@dimen/card_radius"
         app:cardElevation="@dimen/card_elevation">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/card_interior_margin"
-            android:layout_marginLeft="@dimen/card_interior_margin"
-            android:layout_marginEnd="@dimen/card_interior_margin">
+            android:layout_margin="@dimen/card_interior_margin">
             <TextView
                 android:id="@+id/tv_write_review"
                 android:layout_width="match_parent"
@@ -22,7 +22,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_margin="@dimen/text_margin"
                 android:text="@string/write_review"
-                android:textStyle="bold"/>
+                android:textSize="@dimen/section_title"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/tv_address_content"
                 app:layout_constraintTop_toBottomOf="@id/tv_write_review"
@@ -47,6 +49,7 @@
                 android:layout_margin="@dimen/text_margin"
                 app:layout_constraintTop_toBottomOf="@id/tv_options"
                 android:background="@color/colorBackground"
+                android:textColor="@color/black"
                 android:hint="@string/options_hint"/>
             <TextView
                 android:id="@+id/tv_surroundings"
@@ -65,7 +68,8 @@
                 android:layout_margin="@dimen/text_margin"
                 android:background="@color/colorBackground"
                 app:layout_constraintTop_toBottomOf="@id/tv_surroundings"
-                android:hint="@string/surroundings_hint"/>
+                android:hint="@string/surroundings_hint"
+                android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/tv_comment"
                 android:layout_width="match_parent"
@@ -82,7 +86,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorBackground"
                 app:layout_constraintTop_toBottomOf="@id/tv_comment"
-                android:hint="@string/comment_hint"/>
+                android:hint="@string/comment_hint"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/tv_put_room_for_sale"
@@ -93,7 +98,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 app:layout_constraintTop_toBottomOf="@id/et_comment"
-                android:text="@string/put_room_for_sale"/>
+                android:text="@string/put_room_for_sale"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/et_contact"
@@ -102,7 +108,8 @@
                 android:layout_margin="@dimen/text_margin"
                 app:layout_constraintTop_toBottomOf="@id/tv_put_room_for_sale"
                 android:background="@color/colorBackground"
-                android:hint="@string/contact_hint"/>
+                android:hint="@string/contact_hint"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/btn_previous"
@@ -110,6 +117,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/et_contact"
                 app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/section_margin"
                 android:background="@android:color/transparent"
                 android:text="@string/previous"
                 android:textStyle="bold"
@@ -117,12 +125,13 @@
             <Button
                 android:id="@+id/btn_done_and_save"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/et_contact"
+                android:layout_height="@dimen/btn_save_height"
+                app:layout_constraintTop_toTopOf="@id/btn_previous"
+                app:layout_constraintBottom_toBottomOf="@id/btn_previous"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="@dimen/text_margin"
                 android:background="@drawable/button_rounded"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:text="@string/done_and_save"
                 android:clickable="true"
                 android:focusable="true"/>

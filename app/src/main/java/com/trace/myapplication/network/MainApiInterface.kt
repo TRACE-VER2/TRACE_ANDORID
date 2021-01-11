@@ -1,11 +1,11 @@
-package com.trace.myapplication.server
+package com.trace.myapplication.network
 
 import com.trace.myapplication.main.dataType.ResponseMainList
 import com.trace.myapplication.startpage.dataType.*
 import retrofit2.Call
 import retrofit2.http.*
 
-interface RequestInterface{
+interface MainApiInterface{
     @POST("/api/v1/members/login")
     fun requestLogin(@Body body : RequestLogin) : Call<ResponseLogin>
 
@@ -26,6 +26,4 @@ interface RequestInterface{
 
     @GET("/api/v1/buildings")
     fun listPageRequest(@Header("Authorization") header: String, @Query("location") path: String) : Call<ResponseMainList>
-
-
 }
