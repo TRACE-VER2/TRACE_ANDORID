@@ -24,14 +24,16 @@
                 android:textSize="@dimen/section_title"
                 android:text="@string/write_review"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:fontFamily="@font/netmarblel"/>
             <TextView
                 android:id="@+id/tv_address_content"
                 app:layout_constraintTop_toBottomOf="@id/tv_write_review"
                 android:layout_margin="@dimen/text_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="서울특별시 성북구 성북로 ..."/>
+                android:text="서울특별시 성북구 성북로 ..."
+                android:fontFamily="@font/netmarblel"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_attach_image"
                 app:layout_constraintTop_toBottomOf="@id/tv_address_content"
@@ -51,16 +53,18 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/residential_period"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
 
             <EditText
                 android:id="@+id/et_period_from"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/et_height"
                 app:layout_constraintTop_toBottomOf="@id/tv_residential_period"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_margin="@dimen/text_margin"
-                android:text="2000.01"/>
+                android:background="@color/colorBackground"
+                android:hint=" 2000.01 "
+                android:fontFamily="@font/netmarblel"/>
             <TextView
                 android:id="@+id/tv_wave"
                 app:layout_constraintTop_toTopOf="@id/et_period_from"
@@ -73,10 +77,12 @@
             <EditText
                 android:id="@+id/et_period_to"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/et_height"
                 app:layout_constraintTop_toTopOf="@id/et_period_from"
                 app:layout_constraintStart_toEndOf="@id/tv_wave"
-                android:text="2000.12"/>
+                android:background="@color/colorBackground"
+                android:hint=" 2000.12 "
+                android:fontFamily="@font/netmarblel"/>
 
             <TextView
                 android:id="@+id/tv_cost"
@@ -88,7 +94,8 @@
                 android:layout_marginBottom="@dimen/text_margin"
                 app:layout_constraintTop_toBottomOf="@id/et_period_from"
                 android:text="@string/cost"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_cost"
                 android:orientation="horizontal"
@@ -101,13 +108,15 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/fee_monthly"/>
+                    android:text="@string/fee_monthly"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:id="@+id/rg_yearly"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/fee_yearly"/>
+                    android:text="@string/fee_yearly"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <TextView
@@ -116,16 +125,19 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/rg_cost"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="보증금:"/>
+                android:text="보증금:"
+                android:fontFamily="@font/netmarblel"/>
             <EditText
                 android:id="@+id/et_cost_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/et_height"
                 app:layout_constraintTop_toTopOf="@id/tv_cost_1"
                 app:layout_constraintBottom_toBottomOf="@id/tv_cost_1"
                 app:layout_constraintStart_toEndOf="@id/tv_cost_1"
                 android:hint="@string/unit"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:background="@color/colorBackground"
+                android:fontFamily="@font/netmarblel"/>
             <TextView
                 android:id="@+id/tv_cost_2"
                 android:layout_width="0dp"
@@ -134,16 +146,19 @@
                 android:layout_marginLeft="20dp"
                 app:layout_constraintStart_toEndOf="@id/et_cost_1"
                 app:layout_constraintTop_toTopOf="@id/tv_cost_1"
-                android:text="월세:"/>
+                android:text="월세:"
+                android:fontFamily="@font/netmarblel"/>
             <EditText
                 android:id="@+id/et_cost_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/et_height"
                 app:layout_constraintStart_toEndOf="@id/tv_cost_2"
                 app:layout_constraintTop_toTopOf="@id/tv_cost_1"
                 app:layout_constraintBottom_toBottomOf="@id/tv_cost_1"
                 android:hint="@string/unit"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:background="@color/colorBackground"
+                android:fontFamily="@font/netmarblel"/>
 
             <TextView
                 android:id="@+id/tv_total_score"
@@ -156,7 +171,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/total_score"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <FrameLayout
                 android:id="@+id/fl_stars"
                 android:layout_width="wrap_content"
@@ -177,7 +193,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/remodeling"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_remodeling"
                 android:layout_width="match_parent"
@@ -206,7 +223,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/water_pressure"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_water_pressure"
                 android:layout_width="match_parent"
@@ -217,12 +235,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/good"/>
+                    android:text="@string/good"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/bad"/>
+                    android:text="@string/bad"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <TextView
@@ -235,7 +255,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/water_freeze"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_water_freeze"
                 android:layout_width="match_parent"
@@ -246,12 +267,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/freeze_no"/>
+                    android:text="@string/freeze_no"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/freeze_yes"/>
+                    android:text="@string/freeze_yes"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <TextView
@@ -264,7 +287,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/sunlight"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_sunlight"
                 android:layout_width="match_parent"
@@ -275,12 +299,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/good"/>
+                    android:text="@string/good"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/bad"/>
+                    android:text="@string/bad"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <TextView
@@ -293,7 +319,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/soundproof"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_soundproof"
                 android:layout_width="match_parent"
@@ -304,17 +331,20 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/good"/>
+                    android:text="@string/good"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/mediocre"/>
+                    android:text="@string/mediocre"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/bad"/>
+                    android:text="@string/bad"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <TextView
@@ -327,7 +357,8 @@
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
                 android:text="@string/insect"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:fontFamily="@font/netmarblel"/>
             <RadioGroup
                 android:id="@+id/rg_insects"
                 android:layout_width="match_parent"
@@ -338,22 +369,26 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/very_few"/>
+                    android:text="@string/very_few"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/few"/>
+                    android:text="@string/few"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/many"/>
+                    android:text="@string/many"
+                    android:fontFamily="@font/netmarblel"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/too_many"/>
+                    android:text="@string/too_many"
+                    android:fontFamily="@font/netmarblel"/>
             </RadioGroup>
 
             <Button
@@ -369,7 +404,8 @@
                 android:background="@android:color/transparent"
                 android:text="@string/next"
                 android:textStyle="bold"
-                android:textColor="#000000"/>
+                android:textColor="#000000"
+                android:fontFamily="@font/netmarblel"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
