@@ -15,4 +15,5 @@
     <dimen name="star">20dp</dimen>
     <dimen name="text_big">18sp</dimen>
     <dimen name="btn_save_height">30dp</dimen>
+    <dimen name="et_height">25dp</dimen>
 </resources>
