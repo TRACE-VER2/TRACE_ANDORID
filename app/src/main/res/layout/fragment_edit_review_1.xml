@@ -124,6 +124,7 @@
                 android:id="@+id/tv_cost_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
                 app:layout_constraintTop_toBottomOf="@id/rg_cost"
                 app:layout_constraintStart_toStartOf="parent"
                 android:text="보증금:"
@@ -135,6 +136,7 @@
                 app:layout_constraintTop_toTopOf="@id/tv_cost_1"
                 app:layout_constraintBottom_toBottomOf="@id/tv_cost_1"
                 app:layout_constraintStart_toEndOf="@id/tv_cost_1"
+                android:layout_margin="@dimen/text_margin"
                 android:hint="@string/unit"
                 android:background="@color/colorBackground"
                 android:fontFamily="@font/netmarblel"/>
@@ -152,6 +154,7 @@
                 android:id="@+id/et_cost_2"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/et_height"
+                android:layout_margin="@dimen/text_margin"
                 app:layout_constraintStart_toEndOf="@id/tv_cost_2"
                 app:layout_constraintTop_toTopOf="@id/tv_cost_1"
                 app:layout_constraintBottom_toBottomOf="@id/tv_cost_1"
@@ -199,6 +202,7 @@
                 android:id="@+id/et_room_area"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/et_height"
+                android:layout_margin="@dimen/text_margin"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_room_area"
                 android:background="@color/colorBackground"
@@ -214,7 +218,7 @@
                 android:layout_marginStart="@dimen/text_margin"
                 android:layout_marginLeft="@dimen/text_margin"
                 android:layout_marginBottom="@dimen/text_margin"
-                android:text="@string/remodeling"
+                android:text="@string/remodeled"
                 android:textStyle="bold"
                 android:fontFamily="@font/netmarblel"/>
             <RadioGroup
@@ -227,12 +231,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="O"/>
+                    android:text="@string/remodeled_yes"/>
                 <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="X"/>
+                    android:text="@string/remodeled_no"/>
             </RadioGroup>
 
             <TextView

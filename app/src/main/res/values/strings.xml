@@ -30,7 +30,9 @@
     <string name="soundproof">방음</string>
     <string name="water_pressure_freeze">수압 및 동파여부</string>
     <string name="sunlight">채광</string>
-    <string name="remodeling">리모델링 여부</string>
+    <string name="remodeled">리모델링 여부</string>
+    <string name="remodeled_yes">돼있어요👌</string>
+    <string name="remodeled_no">안 돼있어요❌</string>
 
     <string name="comment">솔직한 한 마디</string>
 
@@ -47,12 +49,12 @@
     <string name="unit"> (단위: 만) </string>
     <string name="unit_area"> (단위: ㎡)</string>
     <string name="water_pressure">수압</string>
-    <string name="good">좋음</string>
+    <string name="good">좋아요👍</string>
     <string name="mediocre">보통</string>
-    <string name="bad">안 좋음</string>
+    <string name="bad">아쉬워요👎</string>
     <string name="water_freeze">동파여부</string>
-    <string name="freeze_yes">동파 있음</string>
-    <string name="freeze_no">동파 없음</string>
+    <string name="freeze_yes">동파 있어요🥶</string>
+    <string name="freeze_no">동파 없어요😊</string>
     <string name="too_many">아주 많음</string>
     <string name="many">조금 많음</string>
     <string name="few">적음</string>
