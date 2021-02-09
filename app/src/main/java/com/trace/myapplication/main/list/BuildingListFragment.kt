@@ -28,7 +28,7 @@ class BuildingListFragment : Fragment() {
     val requestToServer = Repository
 
     //nav 도착하는 쪽 코드
-    val args: ListFragmentArgs by navArgs()
+    val args: BuildingListFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +38,7 @@ class BuildingListFragment : Fragment() {
         val view = binding.root
         // Inflate the layout for this fragment
         var tmptitle="건물정보-"
-        tmptitle += args.title
+        //tmptitle += args.title
         binding.tvListTitle.text=tmptitle
 
         //Log.d("도착","$args")

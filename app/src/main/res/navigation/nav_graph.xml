@@ -11,26 +11,11 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-        <action
             android:id="@+id/action_mainFragment_to_editReview1Fragment"
             app:destination="@id/editReview1Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/listFragment"
-        android:name="com.trace.myapplication.main.list.BuildingListFragment"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_building_list" >
-        <argument
-            android:name="text"
-            app:argType="string" />
         <action
-            android:id="@+id/action_listFragment_to_reviewFragment"
-            app:destination="@id/reviewFragment" />
-        <argument
-            android:name="title"
-            app:argType="string" />
+            android:id="@+id/action_mainFragment_to_buildingListFragment2"
+            app:destination="@id/buildingListFragment2" />
     </fragment>
     <fragment
         android:id="@+id/editReview1Fragment"
@@ -49,4 +34,19 @@
         android:id="@+id/reviewFragment"
         android:name="com.trace.myapplication.main.review.ReviewFragment"
         android:label="ReviewFragment" />
+    <fragment
+        android:id="@+id/buildingListFragment2"
+        android:name="com.trace.myapplication.main.list.BuildingListFragment"
+        android:label="fragment_building_list"
+        tools:layout="@layout/fragment_building_list" >
+        <action
+            android:id="@+id/action_buildingListFragment2_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 </navigation>

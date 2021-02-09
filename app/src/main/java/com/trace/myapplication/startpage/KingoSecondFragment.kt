@@ -11,8 +11,6 @@ import androidx.navigation.findNavController
 import com.trace.myapplication.R
 import com.trace.myapplication.databinding.FragmentChoosePreferBinding
 import com.trace.myapplication.databinding.FragmentKingoSecondBinding
-import kotlinx.android.synthetic.main.fragment_kingo_first.*
-import kotlinx.android.synthetic.main.fragment_kingo_second.*
 
 
 class KingoSecondFragment : Fragment() {

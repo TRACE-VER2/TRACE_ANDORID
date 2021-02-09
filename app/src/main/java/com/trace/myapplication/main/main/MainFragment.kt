@@ -15,7 +15,6 @@ import com.trace.myapplication.databinding.FragmentMainBinding
 import com.trace.myapplication.main.dataType.ResponseMainList
 import com.trace.myapplication.network.MainApiInterface
 import com.trace.myapplication.startpage.myjwt
-import kotlinx.android.synthetic.main.fragment_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -56,7 +55,8 @@ class MainFragment : Fragment() {
         for (i in 0..4){
             btnToList[i].setOnClickListener {
                 //view.findNavController().navigate(R.id.action_mainFragment_to_listFragment)
-                val action= MainFragmentDirections.actionMainFragmentToListFragment(doorString[i].toString(),doorStringKo[i].toString())
+                //val action= MainFragmentDirections.actionMainFragmentToListFragment(doorString[i].toString(),doorStringKo[i].toString())
+                val action = MainFragmentDirections.actionMainFragmentToBuildingListFragment2(doorString[i].toString(),doorStringKo[i].toString())
                 view.findNavController().navigate(action)
             }
         }
@@ -126,7 +126,7 @@ class MainFragment : Fragment() {
     }
 
     private fun setFAB(){
-        main_floating.setOnClickListener{
+        binding.mainFloating.setOnClickListener{
             findNavController().navigate(R.id.editReview1Fragment)
         }
     }
